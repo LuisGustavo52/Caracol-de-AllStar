@@ -7,6 +7,6 @@
  *
  * @author 13306819670
  */
-public class Categorias {
+public class Categoria {
     
 }
