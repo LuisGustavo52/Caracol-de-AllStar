@@ -8,5 +8,6 @@
  * @author 13306819670
  */
 public class Tenis {
-    
+    private String nome;
+    private Marca marca;
 }
