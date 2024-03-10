@@ -41,7 +41,6 @@ public class Usuario {
         this.senha = senha;
         this.cpf = cpf;
         this.nome = nome;
-        System.out.println("pedro é gay");
     }
     
      Usuario(){
