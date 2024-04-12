@@ -14,6 +14,12 @@ public class Tenis {
         this.avaliacao = avaliacao;
 
     }
+
+    @Override
+    public String toString() {
+    return "Produto: " + nomeTenis + ", Marca: " + marca + ", Tamanho: " + numeracao ;
+
+    }
     public String getNome() {
         return nomeTenis;
     }

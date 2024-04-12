@@ -1,4 +1,4 @@
-public class Marca {
+public class Marca extends Tenis{
     private String descricao;
     private String estilo;
     private String nomeMarca;
@@ -6,6 +6,7 @@ public class Marca {
     public Marca (){
 
     }
+
     public Marca (String descricao, String estilo, String nome){
         this.descricao = descricao;
         this.estilo = estilo;
