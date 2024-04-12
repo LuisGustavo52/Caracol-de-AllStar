@@ -1,42 +1,37 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Tenis {
     private String nomeTenis;
     private Marca marca;
     private Integer numeracao;
-    private String avaliacao;
+    public  Double mediaAvaliacao;
+    private List<Avaliacao> avaliacoes = new ArrayList<>();
+    private Double preco;
+    private String cor;
+    
 
     public Tenis(){
 
     }
-    public Tenis(String nome, Marca marca, Integer numero, String avaliacao){
-        this.nomeTenis = nome;
-        this.marca = marca;
-        this.numeracao = numeracao;
-        this.avaliacao = avaliacao;
-
-    }
-    public String getNome() {
-        return nomeTenis;
-    }
-    public void setNome(String nome) {
-        this.nomeTenis = nome;
-    }
-    public Marca getMarca() {
-        return marca;
-    }
-    public void setMarca(Marca marca) {
-        this.marca = marca;
-    }
-    public Integer getNumeracao() {
-        return numeracao;
-    }
-    public void setNumeracao(Integer numeracao) {
-        this.numeracao = numeracao;
-    }
-    public String getAvaliacao() {
-        return avaliacao;
-    }
-    public void setAvaliacao(String avaliacao) {
-        this.avaliacao = avaliacao;
+    
+    public void calcularMediaAvaliacao(){
+        Double soma = 0.0;
+        for(Avaliacao ava : avaliacoes){
+            soma += ava.getNota();
+        }
+        
+        this.mediaAvaliacao = soma / avaliacoes.size();
     }
     
+    public void registrarNota(Avaliacao avaliacao){
+        avaliacoes.add(avaliacao);
+    }
+    
+    public void mostrarAvaliacoes(){
+        for(Avaliacao ava : avaliacoes){
+            System.out.println(ava);
+        }
+    }
 }

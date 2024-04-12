@@ -8,6 +8,9 @@ public class Avaliacao {
         this.usuario = usuario;
         this.tenis = tenis;
         this.nota = nota;
+        
+        tenis.registrarNota(this);
+        tenis.calcularMediaAvaliacao();
     }
 
     public Double getNota() {
@@ -34,5 +37,11 @@ public class Avaliacao {
         this.comentario = comentario;
     }
 
-    
+    @Override
+    public String toString(){
+        return "Usuario: "+this.usuario.getNome()+
+                         " | Nota: "+this.nota+
+                         " | Comentario: "+this.comentario;
+    }
+            
 }
