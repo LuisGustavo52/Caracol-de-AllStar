@@ -16,7 +16,7 @@ public class ListaDesejo {
     @Override
     public String toString(){
         for(Tenis tenis : listaTenis){
-            return "Tenis: "+tenis.getNome()"
+            String = "Tenis: "+tenis.getNome()"
         }
     }
 
