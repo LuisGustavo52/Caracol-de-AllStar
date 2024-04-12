@@ -7,8 +7,7 @@ public class Teste {
         Avaliacao av1 = new Avaliacao(user1, t1, 5.0);
         Avaliacao av3 = new Avaliacao(user1, t1, 3.0);
         Avaliacao av2 = new Avaliacao(user1, t1, 2.0);
-        
-        t1.calcularMediaAvaliacao();
-        System.out.println(""+t1.mediaAvaliacao);
+
+        System.out.println(""+t1.getMediaAvaliacao());
     }
 }

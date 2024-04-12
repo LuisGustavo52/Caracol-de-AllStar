@@ -9,7 +9,7 @@ public class Marca {
     public Marca (String descricao, String estilo, String nome){
         this.descricao = descricao;
         this.estilo = estilo;
-        this.nomeMarca = nomeMarca;
+        this.nomeMarca = nome;
     }
     public String getDescricao() {
         return descricao;
