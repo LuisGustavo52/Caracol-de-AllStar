@@ -14,4 +14,10 @@ public class Pix extends FormaPagamento {
     public void setChavePix(String chavePix) {
         this.chavePix = chavePix;
     }
+    
+    public void processarPagamento() {
+        System.out.println("Pagamento com Pix...");
+        System.out.println("Chave Pix " + getChavePix());
+        System.out.println("Parcelas " + getParcelas());
+    }
 }

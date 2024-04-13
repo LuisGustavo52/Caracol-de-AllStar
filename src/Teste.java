@@ -31,4 +31,4 @@ public class Teste {
         System.out.println(""+t1.getMediaAvaliacao());
     }
 }
->>>>>>> c7b12247de2bc6427779f0a2267c7cb5918404fb
+

@@ -24,4 +24,11 @@ public class Cartao extends FormaPagamento {
     public void setNumeroCartao(String numeroCartao) {
         this.numeroCartao = numeroCartao;
     }
+    
+    public void processarPagamento(){
+        System.out.println("Pagamento por Cartão.");
+        System.out.println("Tipo de Cartão " + getTipoCartao());
+        System.out.println("Número do Cartão " + getNumeroCartao());
+        System.out.println("Numero de Parcelas " + getParcelas());   
+    }
 }

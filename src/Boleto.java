@@ -14,4 +14,10 @@ public class Boleto extends FormaPagamento {
     public void setCodigoBarras(String codigoBarras) {
         this.codigoBarras = codigoBarras;
     }
+    
+    public void processarPagamento() {
+        System.out.println("Pagamento com Boleto...\n");
+        System.out.println("Código de Barras: " +getCodigoBarras());
+        System.out.println("\nParcelas: " + getParcelas());
+    }
 }

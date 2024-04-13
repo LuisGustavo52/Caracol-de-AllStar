@@ -11,6 +11,7 @@ public class Pedido {
         this.tenis = tenis;
         this.formaPagamento = formaPagamento;
         this.usuario = usuario;
+        formaPagamento.processarPagamento(formaPagamento);
         emitirNota();
     }
     

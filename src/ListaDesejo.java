@@ -15,9 +15,11 @@ public class ListaDesejo {
     
     @Override
     public String toString(){
-        for(Tenis tenis : listaTenis){
-            String = "Tenis: "+tenis.getNome()"
-        }
+    StringBuilder retorno = new StringBuilder();
+        for(Tenis tenis: listaTenis){
+            retorno.append(tenis.getNome() + "\n");
+        }        
+        return retorno.toString();
     }
     
 }
