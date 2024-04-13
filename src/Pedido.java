@@ -12,6 +12,7 @@ public class Pedido {
         this.formaPagamento = formaPagamento;
         this.usuario = usuario;
         formaPagamento.processarPagamento(formaPagamento);
+        System.out.println("Pedido realizado com sucesso!");
         emitirNota();
     }
     
