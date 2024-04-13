@@ -11,6 +11,15 @@ public class Pedido {
         this.tenis = tenis;
         this.formaPagamento = formaPagamento;
         this.usuario = usuario;
+        emitirNota();
+    }
+    
+    public void emitirNota(){
+        System.out.println("========== NOTA FISCAL N°"+totalPedidos+"=========="+
+                            "\nCliente: "+usuario.getNome()+
+                            "\nTenis: "+tenis.getNome()+
+                            "\nPreco: "+tenis.getPreco()+
+                            "\nForma de Pagamente: "+formaPagamento);
     }
 
     public Usuario getUsuario() {
@@ -31,5 +40,7 @@ public class Pedido {
     public Integer getIdPedido() {
         return idPedido;
     }
+    
+    
 
 }

@@ -1,32 +1,24 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class ListaDesejo {
-    private String tenisFavorito;
-    private String idTenis;
-
-    public ListaDesejo(){
-        
+    private List<Tenis> listaTenis = new ArrayList<>();
+    private Usuario usuario;
+    
+    public ListaDesejo(Usuario usuario){
+        this.usuario = usuario;
     }
-
-    public ListaDesejo(String tenisFavorito, String idTenis){
-        this.idTenis = idTenis;
-        this.tenisFavorito = tenisFavorito;
+    
+    public void adicionarTenis(Tenis tenis){
+        listaTenis.add(tenis);
     }
-
-    public String getTenisFavorito() {
-        return tenisFavorito;
+    
+    @Override
+    public String toString(){
+        for(Tenis tenis : listaTenis){
+            String = "Tenis: "+tenis.getNome()"
+        }
     }
-
-    public void setTenisFavorito(String tenisFavorito) {
-        this.tenisFavorito = tenisFavorito;
-    }
-
-    public String getIdTenis() {
-        return idTenis;
-    }
-
-    public void setIdTenis(String idTenis) {
-        this.idTenis = idTenis;
-    }
-
     
 }
     

@@ -1,3 +1,5 @@
+/* 
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 public static void main(String[] args) {
@@ -13,3 +15,20 @@ public static void main(String[] args) {
         System.out.println("");
     }
 }
+
+=======
+*/
+public class Teste {
+    public static void main(String[] args) {
+        Tenis t1 = new Tenis();
+        Usuario user1 = new Usuario();            
+        
+        
+        Avaliacao av1 = new Avaliacao(user1, t1, 5.0);
+        Avaliacao av3 = new Avaliacao(user1, t1, 3.0);
+        Avaliacao av2 = new Avaliacao(user1, t1, 2.0);
+
+        System.out.println(""+t1.getMediaAvaliacao());
+    }
+}
+>>>>>>> c7b12247de2bc6427779f0a2267c7cb5918404fb

@@ -4,6 +4,9 @@ public class Usuario {
     private Integer cpf;
     private String nome;
 
+    public boolean login(String email, String senha){
+        return this.email.equals(email) && this.senha.equals(senha);
+    }
     public String getEmail() {
         return email;
     }
