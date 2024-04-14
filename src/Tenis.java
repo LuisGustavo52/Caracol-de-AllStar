@@ -22,18 +22,7 @@ public class Tenis {
         this.preco = preco;
         this.categoria = categoria;
     }
-/* 
-<<<<<<< HEAD
-    }
 
-    @Override
-    public String toString() {
-    return "Produto: " + nomeTenis + ", Marca: " + marca + ", Tamanho: " + numeracao ;
-
-    }
-=======
->>>>>>> c7b12247de2bc6427779f0a2267c7cb5918404fb
-*/
     public String getNome() {
         return nome;
     }

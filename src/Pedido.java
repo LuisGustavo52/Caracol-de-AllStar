@@ -21,7 +21,7 @@ public class Pedido {
                             "\nCliente: "+usuario.getNome()+
                             "\nTenis: "+tenis.getNome()+
                             "\nPreco: "+tenis.getPreco()+
-                            "\nForma de Pagamente: "+formaPagamento);
+                            "\nForma de Pagamento: "+formaPagamento);
     }
 
     public Usuario getUsuario() {

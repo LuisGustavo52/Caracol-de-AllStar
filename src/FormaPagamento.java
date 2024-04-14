@@ -26,13 +26,7 @@ public class FormaPagamento {
     }
 
     public void processarPagamento(FormaPagamento formaPagamento) {
-        if (formaPagamento instanceof Cartao) {
-            ((Cartao) formaPagamento).processarPagamento();
-        } else if (formaPagamento instanceof Boleto) {
-            ((Boleto) formaPagamento).processarPagamento();
-        } else if (formaPagamento instanceof Pix) {
-            ((Pix) formaPagamento).processarPagamento();
-        }
+        formaPagamento.processarPagamento();
     }
     
     public void processarPagamento(){
