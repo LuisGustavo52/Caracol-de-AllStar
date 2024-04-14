@@ -1,4 +1,4 @@
-public class Marca extends Tenis{
+public class Marca{
     private String descricao;
     private String estilo;
     private String nomeMarca;

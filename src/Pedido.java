@@ -2,13 +2,13 @@ public class Pedido {
     private Usuario usuario;
     private static Integer totalPedidos = 0;
     private Integer idPedido;
-    private Tenis tenis;
+    private Calcado calcado;
     private FormaPagamento formaPagamento;
     
-    Pedido(Usuario usuario, Tenis tenis, FormaPagamento formaPagamento){
+    Pedido(Usuario usuario, Calcado calcado, FormaPagamento formaPagamento){
         Pedido.totalPedidos = Pedido.totalPedidos + 1;
         this.idPedido = Pedido.totalPedidos;
-        this.tenis = tenis;
+        this.calcado = calcado;
         this.formaPagamento = formaPagamento;
         this.usuario = usuario;
         formaPagamento.processarPagamento(formaPagamento);
@@ -19,9 +19,9 @@ public class Pedido {
     public void emitirNota(){
         System.out.println("========== NOTA FISCAL N°"+totalPedidos+"=========="+
                             "\nCliente: "+usuario.getNome()+
-                            "\nTenis: "+tenis.getNome()+
-                            "\nPreco: "+tenis.getPreco()+
-                            "\nForma de Pagamento: "+formaPagamento);
+                            "\nCalcado: "+calcado.getNome()+
+                            "\nPreco: "+calcado.getPreco()+
+                            "\nForma de Pagamento: "+formaPagamento.getFormaPagamento());
     }
 
     public Usuario getUsuario() {
@@ -31,8 +31,8 @@ public class Pedido {
         return totalPedidos;
     }  
 
-    public Tenis getTenis() {
-        return tenis;
+    public Calcado getCalcado() {
+        return calcado;
     }
 
     public FormaPagamento getFormaPagamento() {

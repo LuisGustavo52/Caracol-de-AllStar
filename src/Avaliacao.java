@@ -1,16 +1,16 @@
 public class Avaliacao {
     private Double nota;
     private Usuario usuario;
-    private Tenis tenis;
+    private Calcado calcado;
     private String comentario;
     
-    public Avaliacao(Usuario usuario, Tenis tenis, Double nota) {
+    public Avaliacao(Usuario usuario, Calcado Calcado, Double nota) {
         this.usuario = usuario;
-        this.tenis = tenis;
+        this.calcado = Calcado;
         this.nota = nota;
         
-        tenis.registrarNota(this);
-        tenis.calcularMediaAvaliacao();
+        Calcado.registrarNota(this);
+        Calcado.calcularMediaAvaliacao();
     }
 
     public Double getNota() {
@@ -25,8 +25,8 @@ public class Avaliacao {
         return usuario;
     }
 
-    public Tenis getTenis() {
-        return tenis;
+    public Calcado getCalcado() {
+        return calcado;
     }
 
     public String getComentario() {

@@ -2,11 +2,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tenis {
+public class Tenis implements Calcado{
     private String nome;
     private Marca marca;
     private Integer numeracao;
-    private  Double mediaAvaliacao;
+    private Double mediaAvaliacao;
     private List<Avaliacao> avaliacoes = new ArrayList<>();
     private Double preco;
     private Categoria categoria;
@@ -82,6 +82,7 @@ public class Tenis {
     
     
     
+    @Override
     public void calcularMediaAvaliacao(){
         Double soma = 0.0;
         for(Avaliacao ava : avaliacoes){
@@ -91,10 +92,12 @@ public class Tenis {
         this.mediaAvaliacao = soma / avaliacoes.size();
     }
     
+    @Override
     public void registrarNota(Avaliacao avaliacao){
         avaliacoes.add(avaliacao);
     }
     
+    @Override
     public void mostrarAvaliacoes(){
         for(Avaliacao ava : avaliacoes){
             System.out.println(ava);
