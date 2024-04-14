@@ -38,7 +38,7 @@ public class Teste {
         Avaliacao av3 = new Avaliacao(user3, t2, 3.0);
         Avaliacao av2 = new Avaliacao(user2, t1, 2.0);
 
-        System.out.println(""+t1.getMediaAvaliacao());
+        t1.mostrarAvaliacoes();
 
         Cartao cartao1 = new Cartao(1, "DEBITO","111111");
         Pix pix1 = new Pix(0, "1111111");

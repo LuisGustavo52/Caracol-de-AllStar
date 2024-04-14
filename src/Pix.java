@@ -15,6 +15,7 @@ public class Pix extends FormaPagamento {
         this.chavePix = chavePix;
     }
     
+    @Override
     public void processarPagamento() {
         System.out.println("Pagamento com Pix...");
         System.out.println("Chave Pix " + getChavePix());
