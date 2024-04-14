@@ -1,4 +1,4 @@
-public class FormaPagamento {
+public abstract class FormaPagamento {
     private Integer parcelas;
     private String formaPagamento;
 
@@ -27,10 +27,11 @@ public class FormaPagamento {
 
     public void processarPagamento(FormaPagamento formaPagamento) {
         formaPagamento.processarPagamento();
+        System.out.println("Pagamento realizado com sucesso");
     }
-    
-    public void processarPagamento(){
-        System.out.println("Pagamento confirmado!");
-    }
-    
+
+    public abstract void processarPagamento();
+
 }
+    
+

@@ -1,6 +1,23 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public class Cartao extends FormaPagamento {
     private String tipoCartao;
     private String numeroCartao;
+    private LocalDate vencimentoCartao;
+
+
+    public LocalDate getVencimentoCartao() {
+        return vencimentoCartao;
+    }
+
+    public void setDataRecorde(String data) {
+        try{
+            LocalDate.parse(data, DateTimeFormatter.ofPattern("MM/yy"));
+        }catch(Exception ex){
+            System.out.println("Coloque uma data no formato: MM/AA");
+        }
+    }
 
     public Cartao(Integer parcelas, String tipoCartao, String numeroCartao) {
         super(parcelas);
